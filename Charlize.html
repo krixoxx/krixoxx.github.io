@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Letter</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive;
+        }
+        .button {
+            background-color: #FFC0CB;
+            border: 2px solid #000000;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+
+        /* Hover effect */
+        .button:hover {
+            background-color: #dfaeb6; 
+        }
+
+        /* Style for the modal */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+            padding-top: 60px;
+        }
+
+        /* Style for modal content */
+        .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto; /* 5% from the top and centered */
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%; /* Could be more or less, depending on screen size */
+        }
+    </style>
+</head>
+<body>
+    <div align="center">
+        <h1>
+            Hey cutie u got a letter!
+        </h1>
+        <p>
+            TO MY POOKIE
+        </p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/018/764/710/small_2x/envelope-with-heart-png.png">
+        <!-- Button to trigger the modal -->
+        <p></p>
+        <button class="button" onclick="openModal()">Open Envelope!</button>
+        <!-- Button Text -->
+        </p>
+    </div>
+
+
+    <!-- The modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+            <div align='center'>
+                <p>Boo!</p>
+                <!-- Text for the button's popup -->
+                <img src="https://i.pinimg.com/564x/37/ee/de/37eede4a4f23fabed10211c39d42fd18.jpg" alt="Current Filler Image" style="width: 200px; height: auto; border: 2px solid #000000; border-radius: 8px;">
+                <p>
+                    Hey cutie, we should get to know eachother cuz i really like u no cyap <br>
+                    i think ur kinda cute but a bit mean but also really cool and i wanna get to know u so stop being so mean <br>
+                    <b>even though we cant date, i still want u to be mine because i really like you, so tell me, yes or no? </b> <br>
+                    either way, i promise it wont change anything, so HURRY UP AND DM ME THE ANSWER
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Script to open and close the modal -->
+    <script>
+        function openModal() {
+            document.getElementById("myModal").style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+    </script>
+</body>
+</html>
