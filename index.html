@@ -1,93 +1,106 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <style>
-            @font-face {
-                font-family: MCR;
-                src: url(my_chemical_romance.ttf);
-            }
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @font-face {
+            font-family: MCR;
+            src: url(my_chemical_romance.ttf);
+        }
 
-            body {
+        body {
+            font-family: "MCR";
+            font-size: small;
+            background-color: black;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            overflow: auto; 
+        }
 
-                font-family: "MCR";
-                font-size: small;
-                background-color: black;
-                color: white;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                height: 70vh;
-                margin: 0;
-                padding: 0;
-                overflow-y: auto;
-            }
-            .center {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex: 1;
-                margin-top: 20px;
-            }
-            .bottom-right {
-                position: fixed;
-                bottom: 0;
-                right: 0;
-            }
+        .box {
+            width: 400px;
+            border: 1px solid white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            box-sizing: border-box;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .box img {
+            width: 200px;
+            height: auto;
+            margin: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .bottom-right {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+        }
+
+        .bottom-right img {
+            width: auto;
+            height: 230px;
+        }
+
+        body::-webkit-scrollbar {
+            width: 0px;
+            background: transparent; 
+        }
+
+        @media (max-width: 600px) {
             .box {
-                width: 400px;
-                max-height: 70vh;
-                height: auto;
-                border: 1px solid white;
-                display: flex;
-                flex-direction: column;
-                justify-content: top;
-                align-items: center;
-                padding: 10px;
-                box-sizing: border-box;
-                text-align: center;
+                width: 90%;
+                transform: scale(0.8);
+            }
 
-            }
             .box img {
-                width: 200px; 
-                height: auto; 
-                margin: 5px;
+                width: 90%;
             }
-            .bottom-right img {
-                object-fit: cover; 
-                width: auto;
-                height: 230px;
+
+            .bottom-right {
+                display: none;
             }
-        </style>
-    </head>
-    <body>
-        <div class="center">
-            <div class="box">
-                <h3>
-                    krixox
-                </h1>
-                <p>
-                    <img src="https://i.pinimg.com/564x/74/50/39/74503905199fd89caacc4f98515359fa.jpg" alt="Image 1">    
-                    </P>
-                    <p>
-                        call me &nbsp;krix &nbsp;or &nbsp;krixox 
-                    </p>
-                    <p>
-                        My favourite bands are:
-                    </p>
-                    <p>
-                        PIERCE THE VEIL
-                    </p>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-clFT6qskAZ3Oj4eE715RD1NPb8qaLcF3rA&s" alt="vicfuentes">
-                    </p>
-                    <p>
-                        
-                    </p>
-            </div>
-        </div>
-        <div class="bottom-right">
-            <img src="https://github.com/krixoxx/krixoxx.github.io/blob/main/78d39f4f17f2947a2f0f1b37f49b8648%20(1).gif?raw=true" alt="Animated GIF">
-        </div>
-    </body>
+        }
+
+        @media (max-width: 400px) {
+            .box {
+                width: 100%;
+                transform: scale(0.6);
+            }
+
+            .box img {
+                width: 100%;
+            }
+
+            .bottom-right {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h3>krixox</h3>
+        <img src="https://i.pinimg.com/564x/74/50/39/74503905199fd89caacc4f98515359fa.jpg" alt="Image 1">
+        <p>call me &nbsp;krix &nbsp;or &nbsp;krixox</p>
+        <p>My favourite bands are:</p>
+        <p>PIERCE THE VEIL</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-clFT6qskAZ3Oj4eE715RD1NPb8qaLcF3rA&s" alt="vicfuentes">
+        <img src="https://i.pinimg.com/564x/3b/fd/95/3bfd9564c4b53209e6044401ded7e7bd.jpg" alt="">
+    </div>
+    <div class="bottom-right">
+        <img src="https://github.com/krixoxx/krixoxx.github.io/blob/main/78d39f4f17f2947a2f0f1b37f49b8648%20(1).gif?raw=true" alt="Animated GIF">
+    </div>
+</body>
 </html>
